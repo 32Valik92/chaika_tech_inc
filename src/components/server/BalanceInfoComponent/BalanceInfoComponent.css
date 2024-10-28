@@ -48,7 +48,9 @@
 .daily-points {
     box-sizing: border-box;
     display: flex;
+    flex-direction: column;
     flex: 1;
+    justify-content: center;
 }
 
 /* ---------------- end class daily-points ---------------- */
