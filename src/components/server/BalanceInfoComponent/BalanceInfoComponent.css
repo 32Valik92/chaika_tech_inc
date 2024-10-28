@@ -1,0 +1,98 @@
+.balance-info {
+    box-sizing: border-box;
+    width: 100%;
+    height: 200px;
+
+    display: flex;
+    gap: 16px;
+}
+
+/* !!! ---------------- class balance-points ---------------- */
+.balance-points, .no-payment-due {
+    display: flex;
+    flex: 1;
+}
+
+.balance-points {
+    box-sizing: border-box;
+
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* !!! --------- class balance-info-balance ---------*/
+.balance-info-balance {
+    box-sizing: border-box;
+
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.balance-count {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.balance-available {
+    color: #c3c3c3;
+}
+
+/* ---------------- end class balance-points ---------------- */
+/* !!! ---------------- class daily-points ---------------- */
+
+.daily-points {
+    box-sizing: border-box;
+    display: flex;
+    flex: 1;
+}
+
+/* ---------------- end class daily-points ---------------- */
+/* !!! ---------------- class no-payment-due ---------------- */
+.no-payment-due {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 16px;
+    height: 100%;
+}
+
+.no-payment-due-month, .check-mark {
+    flex: 1;
+}
+
+.no-payment-due-current-month {
+    color: #c3c3c3;
+}
+
+.check-mark {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    padding-right: 20px;
+}
+
+.check-mark > svg {
+    width: 40%;
+    border-radius: 50%;
+    color: #eaeaea;
+    background-color: black;
+    border: none;
+}
+
+/* ---------------- end class no-payment-due ---------------- */
+
+/* same class for header's balance components */
+.border-class-balance {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 5px 8px;
+    color: #000000;
+}
