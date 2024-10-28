@@ -1,0 +1,91 @@
+.transaction-component {
+    position: relative;
+    box-sizing: border-box;
+    background: #ffffff;
+    width: 100%;
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+}
+
+/* line ander the block */
+.transaction-component::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 14px;
+    width: 100%;
+    height: 1px;
+    background-color: #f4f4f4;
+}
+
+
+/* !!! ----- class transaction-img ----- */
+.transaction-img {
+    box-sizing: border-box;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-div {
+    width: 65%;
+    height: 65%;
+    box-sizing: border-box;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-div svg {
+    width: 50%;
+}
+
+/* ----- end class transaction-img ----- */
+
+/* !!! ----- class transaction-info ----- */
+.transaction-info {
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 65%;
+}
+
+.info-name-amount {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+}
+
+.hidden-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #b3b3b3;
+}
+
+/* ----- end class transaction-info ----- */
+
+/* !!! ----- class info-details ----- */
+.info-details {
+    box-sizing: border-box;
+    width: 30px;
+}
+
+.details-icon {
+    padding: 10px 10px 0 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.details-icon svg {
+    width: 12px;
+    color: #b3b3b3;
+}
+
+/* ----- end class info-details ----- */

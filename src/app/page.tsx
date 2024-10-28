@@ -2,12 +2,14 @@ import "./page.css";
 
 import React from "react";
 
-import {BalanceInfoComponent} from "@/components";
+import {BalanceInfoComponent, TransactionsListComponent} from "@/components";
 
 export default function HomePage() {
   return (
-    <div className={"transactions-list"}>
+    <div className={"main-transactions-list"}>
       <BalanceInfoComponent/>
+
+      <TransactionsListComponent/>
     </div>
   );
 }

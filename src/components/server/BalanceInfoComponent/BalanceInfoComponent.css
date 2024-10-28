@@ -39,7 +39,7 @@
 }
 
 .balance-available {
-    color: #c3c3c3;
+    color: #b3b3b3;
 }
 
 /* ---------------- end class balance-points ---------------- */
@@ -69,7 +69,7 @@
 }
 
 .no-payment-due-current-month {
-    color: #c3c3c3;
+    color: #b3b3b3;
 }
 
 .check-mark {
@@ -84,7 +84,7 @@
 .check-mark > svg {
     width: 40%;
     border-radius: 50%;
-    color: #eaeaea;
+    color: #f4f4f4;
     background-color: black;
     border: none;
 }

@@ -2,9 +2,9 @@ import "./BalanceInfoComponent.css";
 
 import {faCircleCheck} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import React, {FC} from "react";
+import React from "react";
 
-const BalanceInfoComponent: FC = () => {
+const BalanceInfoComponent = () => {
   // Function to determine current season and day in season
   const getDayOfSeason = (): number => {
     const today = new Date();
@@ -46,7 +46,7 @@ const BalanceInfoComponent: FC = () => {
     return dayOfSeason;
   };
 
-  // function for calculate points, used Fibonacci numbers
+  // function for calculate points, used idea from Fibonacci
   const calculateDailyPoints = (dayOfSeason: number): string => {
     let points = 0;
 
@@ -59,7 +59,7 @@ const BalanceInfoComponent: FC = () => {
       let b = 3;
 
       for (let i = 3; i <= dayOfSeason; i++) {
-        let c = (a + b * 0.6).toFixed(2);
+        const c = (a + b * 0.6).toFixed(2);
         a = +b.toFixed(2);
         b = +c;
       }
@@ -86,7 +86,7 @@ const BalanceInfoComponent: FC = () => {
 
         <div className="daily-points border-class-balance">
           <div>Daily Points</div>
-          <div style={{color: "#c3c3c3"}}>{dailyPoints}</div>
+          <div style={{color: "#b3b3b3"}}>{dailyPoints}</div>
         </div>
       </div>
 

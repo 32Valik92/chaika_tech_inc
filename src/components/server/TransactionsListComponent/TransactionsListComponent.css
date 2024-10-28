@@ -1,0 +1,26 @@
+.transactions-list-component {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    box-sizing: border-box;
+    margin-top: 40px;
+}
+
+.transactions-list-header {
+    width: 100%;
+    text-align: start;
+    color: black;
+    font-weight: 700;
+    font-size: 27px;
+}
+
+.transactions-list {
+    box-sizing: border-box;
+    overflow: hidden;
+    margin-top: 10px;
+    width: 100%;
+    background: #ffffff;
+    border-radius: 12px;
+}

@@ -1,0 +1,112 @@
+[
+    {
+        "id": 1,
+        "type": "payment",
+        "amount": 120.50,
+        "nameOfTransaction": "Payment",
+        "description": "From JPMorgan Chase Bank Nationally",
+        "date": "2024-10-25T10:30:00",
+        "status": "completed",
+        "authorizedUsers": "",
+        "icons": "💵"
+    },
+    {
+        "id": 2,
+        "type": "credit",
+        "amount": 150.75,
+        "nameOfTransaction": "Grocery",
+        "description": "Grocery shopping at local market",
+        "date": "2024-10-03T15:45:00",
+        "status": "pending",
+        "authorizedUsers": "Diana",
+        "icons": "🛒"
+    },
+    {
+        "id": 3,
+        "type": "payment",
+        "amount": 30.00,
+        "nameOfTransaction": "Payment",
+        "description": "Payment for freelance web development",
+        "date": "2024-10-05T09:00:00",
+        "status": "completed",
+        "authorizedUsers": "",
+        "icons": "💻"
+    },
+    {
+        "id": 4,
+        "type": "credit",
+        "amount": 80.00,
+        "nameOfTransaction": "Dining Out",
+        "description": "Dinner at a restaurant",
+        "date": "2024-10-07T19:30:00",
+        "status": "pending",
+        "authorizedUsers": "Diana",
+        "icons": "🍽️"
+    },
+    {
+        "id": 5,
+        "type": "payment",
+        "amount": 100.00,
+        "nameOfTransaction": "Payment",
+        "description": "From JPMorgan Chase Bank Nationally",
+        "date": "2024-10-08T11:15:00",
+        "status": "completed",
+        "authorizedUsers": "",
+        "icons": "🎁"
+    },
+    {
+        "id": 6,
+        "type": "credit",
+        "amount": 33.00,
+        "nameOfTransaction": "Coffee Shop",
+        "description": "Monthly electricity bill",
+        "date": "2024-10-10T14:00:00",
+        "status": "pending",
+        "authorizedUsers": "",
+        "icons": "💡"
+    },
+    {
+        "id": 7,
+        "type": "payment",
+        "amount": 51.20,
+        "nameOfTransaction": "Payment",
+        "description": "Cashback from credit card",
+        "date": "2024-10-12T13:20:00",
+        "status": "completed",
+        "authorizedUsers": "",
+        "icons": "💳"
+    },
+    {
+        "id": 8,
+        "type": "credit",
+        "amount": 30.50,
+        "nameOfTransaction": "Coffee Shop",
+        "description": "Coffee with friends",
+        "date": "2024-10-14T16:45:00",
+        "status": "completed",
+        "authorizedUsers": "",
+        "icons": "☕"
+    },
+    {
+        "id": 9,
+        "type": "credit",
+        "amount": 12.44,
+        "nameOfTransaction": "Car Repair",
+        "description": "Repair work for the car",
+        "date": "2024-10-16T10:00:00",
+        "status": "pending",
+        "authorizedUsers": "",
+        "icons": "🚗"
+    },
+    {
+        "id": 10,
+        "type": "payment",
+        "amount": 20.00,
+        "nameOfTransaction": "Payment",
+        "description": "Payment for freelance web development",
+        "date": "2024-10-18T08:45:00",
+        "status": "completed",
+        "authorizedUsers": "",
+        "icons": "📈"
+    }
+]
