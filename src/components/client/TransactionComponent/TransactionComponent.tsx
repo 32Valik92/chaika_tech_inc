@@ -38,7 +38,7 @@ const TransactionComponent: FC<IProps> = ({transaction}) => {
   };
 
   return (
-    <div className="transaction-component" onClick={() => router.push(`/${transaction.id}`)}>
+    <div className="transaction-component" onClick={() => router.push("/6")}>
       <div className="transaction-img">
         <div className="img-div" style={{backgroundColor: randomGray}}>
           <FontAwesomeIcon icon={faApple}/>
