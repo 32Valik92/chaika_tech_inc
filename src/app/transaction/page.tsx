@@ -15,9 +15,9 @@ const TransactionDetailPage = async (props: Props) => {
   const {params: {transaction}} = props;
 
   // I did it, because free hosting doesn't take a confidence data like id
-  const transactionId = parseInt(transaction.replace("transaction", ""), 10);
+  // const transactionId = parseInt(transaction.replace("transaction", ""), 10);
 
-  const transactionObj = await transactionService.getById(transactionId);
+  const transactionObj = await transactionService.getById(6);
   console.log(transaction);
   return (
     <div className="transaction-detail-page">
