@@ -38,8 +38,7 @@ const TransactionComponent: FC<IProps> = ({transaction}) => {
   };
 
   const showDetails = (): void => {
-    // I did it, because free hosting doesn't take a confidence data like id
-    router.push("/transaction");
+    router.push(`/${transaction.id}`);
   };
 
   return (
