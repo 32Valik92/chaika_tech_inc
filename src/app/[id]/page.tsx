@@ -2,7 +2,7 @@ import "./page.css";
 
 import React from "react";
 
-import {transactionService} from "@/services";
+import {BackButtonComponent} from "@/components";
 
 type Props = {
   params: {
@@ -13,11 +13,11 @@ type Props = {
 const TransactionDetailPage = async (props: Props) => {
   const {params: {id}} = props;
 
-  const transaction = await transactionService.getById(+id);
-  console.log(transaction);
+  // const transaction = await transactionService.getById(+id);
+  // console.log(transaction);
   return (
     <div className="transaction-detail-page">
-      {/*<BackButtonComponent/>*/}
+      <BackButtonComponent/>
       {id}
       {/*<TransactionDetailComponent transaction={transaction}/>*/}
     </div>
