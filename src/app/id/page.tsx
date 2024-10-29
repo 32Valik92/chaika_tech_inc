@@ -13,8 +13,9 @@ type Props = {
 
 const TransactionDetailPage = async (props: Props) => {
   const {params: {id}} = props;
+  console.log(id);
 
-  const transaction = await transactionService.getById(+id);
+  const transaction = await transactionService.getById(2);
   return (
     <div className="transaction-detail-page">
       <BackButtonComponent/>
