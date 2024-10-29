@@ -37,12 +37,13 @@ const TransactionComponent: FC<IProps> = ({transaction}) => {
     }
   };
 
-  const showDetails = (id: number): void => {
+  const showDetails = (id: number | string): void => {
+    console.log(id);
     router.push(`/${id}`);
   };
 
   return (
-    <div className="transaction-component" onClick={() => showDetails(transaction.id)}>
+    <div className="transaction-component" onClick={() => showDetails("asdqwe")}>
       <div className="transaction-img">
         <div className="img-div" style={{backgroundColor: randomGray}}>
           <FontAwesomeIcon icon={faApple}/>

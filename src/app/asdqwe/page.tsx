@@ -7,14 +7,14 @@ import {transactionService} from "@/services";
 
 type Props = {
   params: {
-    id: string;
+    asdqwe: string;
   }
 }
 
 const TransactionDetailPage = async (props: Props) => {
-  const {params: {id}} = props;
-  const transaction = await transactionService.getById(+id);
-  console.log(transaction);
+  const {params: {asdqwe}} = props;
+  const transaction = await transactionService.getById(6);
+  console.log(asdqwe);
   return (
     <div className="transaction-detail-page">
       <BackButtonComponent/>
