@@ -21,7 +21,7 @@ const TransactionComponent: FC<IProps> = ({transaction}) => {
   const randomGray = `rgb(${grayValue}, ${grayValue}, ${grayValue})`;
 
   // check if a date is the last 7 days
-  const formatDate = (dateString: string):string => {
+  const formatDate = (dateString: string): string => {
     const date = new Date(dateString);
     const now = new Date();
     const sevenDaysAgo = new Date();
@@ -37,8 +37,12 @@ const TransactionComponent: FC<IProps> = ({transaction}) => {
     }
   };
 
+  const showDetails = (id: number): void => {
+    router.push(`/${id}`);
+  };
+
   return (
-    <div className="transaction-component" onClick={() => router.push("/6")}>
+    <div className="transaction-component" onClick={() => showDetails(transaction.id)}>
       <div className="transaction-img">
         <div className="img-div" style={{backgroundColor: randomGray}}>
           <FontAwesomeIcon icon={faApple}/>
