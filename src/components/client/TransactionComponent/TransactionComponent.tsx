@@ -44,7 +44,7 @@ const TransactionComponent: FC<IProps> = ({transaction}) => {
   };
 
   return (
-    <div className="transaction-component" onClick={() => showDetails(transaction.id)}>
+    <div className="transaction-component" onClick={() => showDetails(2)}>
       <div className="transaction-img">
         <div className="img-div" style={{backgroundColor: randomGray}}>
           <FontAwesomeIcon icon={faApple}/>
