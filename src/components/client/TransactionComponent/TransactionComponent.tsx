@@ -5,7 +5,6 @@ import {faApple} from "@fortawesome/free-brands-svg-icons";
 import {faChevronRight} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import Link from "next/link";
-// import {useRouter} from "next/navigation";
 import React, {FC} from "react";
 
 import {ITransactions} from "@/models";
@@ -15,7 +14,6 @@ interface IProps {
 }
 
 const TransactionComponent: FC<IProps> = ({transaction}) => {
-  // const router = useRouter();
 
   // random silver color
   const grayValue = Math.floor(Math.random() * 100) + 140;
@@ -37,10 +35,6 @@ const TransactionComponent: FC<IProps> = ({transaction}) => {
       return date.toLocaleDateString("en-US");
     }
   };
-
-  // const showDetails = (): void => {
-  //   router.push(`/${transaction.id}`);
-  // };
 
   return (
     <Link href={`/${transaction.id}`} className="link-component">
