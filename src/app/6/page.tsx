@@ -13,6 +13,7 @@ type Props = {
 
 const TransactionDetailPage = async (props: Props) => {
   const {params: {id}} = props;
+  console.log(id);
   const transaction = await transactionService.getById(6);
   return (
     <div className="transaction-detail-page">
