@@ -1,8 +1,10 @@
+"use client";
 import "./TransactionComponent.css";
 
 import {faApple} from "@fortawesome/free-brands-svg-icons";
 import {faChevronRight} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {useRouter} from "next/navigation";
 import React, {FC} from "react";
 
 import {ITransactions} from "@/models";
@@ -12,6 +14,8 @@ interface IProps {
 }
 
 const TransactionComponent: FC<IProps> = ({transaction}) => {
+  const router = useRouter();
+
   // random silver color
   const grayValue = Math.floor(Math.random() * 100) + 140;
   const randomGray = `rgb(${grayValue}, ${grayValue}, ${grayValue})`;
@@ -34,7 +38,7 @@ const TransactionComponent: FC<IProps> = ({transaction}) => {
   };
 
   return (
-    <div className="transaction-component">
+    <div className="transaction-component" onClick={() => router.push(`/${transaction.id}`)}>
       <div className="transaction-img">
         <div className="img-div" style={{backgroundColor: randomGray}}>
           <FontAwesomeIcon icon={faApple}/>
@@ -51,7 +55,7 @@ const TransactionComponent: FC<IProps> = ({transaction}) => {
         </div>
 
         <div className="info-status-description hidden-text">
-          {transaction.status === "pending" ? "Pending - " : ""} {transaction.description}
+          {transaction.status === "Pending" ? "Pending - " : ""} {transaction.description}
         </div>
 
         <div className="info-authorizedUsers-date hidden-text">

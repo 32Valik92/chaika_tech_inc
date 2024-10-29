@@ -1,3 +1,3 @@
 export * from "./BalanceInfoComponent/BalanceInfoComponent";
-export * from "./TransactionComponent/TransactionComponent";
+export * from "./TransactionDetailComponent/TransactionDetailComponent";
 export * from "./TransactionsListComponent/TransactionsListComponent";

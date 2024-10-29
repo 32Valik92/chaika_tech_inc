@@ -1,0 +1,13 @@
+.transaction-detail-page{
+    display: flex;
+    flex-direction: column;
+}
+
+.back-button-container{
+    width: 20px;
+}
+
+.back-button-container svg{
+    width: 20px;
+    color: rgba(47, 105, 250, 0.88);
+}

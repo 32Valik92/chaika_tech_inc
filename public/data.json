@@ -6,7 +6,7 @@
         "nameOfTransaction": "Payment",
         "description": "From JPMorgan Chase Bank Nationally",
         "date": "2024-10-25T10:30:00",
-        "status": "completed",
+        "status": "Approved",
         "authorizedUsers": "",
         "icons": "💵"
     },
@@ -17,7 +17,7 @@
         "nameOfTransaction": "Grocery",
         "description": "Grocery shopping at local market",
         "date": "2024-10-03T15:45:00",
-        "status": "pending",
+        "status": "Pending",
         "authorizedUsers": "Diana",
         "icons": "🛒"
     },
@@ -28,7 +28,7 @@
         "nameOfTransaction": "Payment",
         "description": "Payment for freelance web development",
         "date": "2024-10-05T09:00:00",
-        "status": "completed",
+        "status": "Approved",
         "authorizedUsers": "",
         "icons": "💻"
     },
@@ -39,7 +39,7 @@
         "nameOfTransaction": "Dining Out",
         "description": "Dinner at a restaurant",
         "date": "2024-10-07T19:30:00",
-        "status": "pending",
+        "status": "Pending",
         "authorizedUsers": "Diana",
         "icons": "🍽️"
     },
@@ -50,7 +50,7 @@
         "nameOfTransaction": "Payment",
         "description": "From JPMorgan Chase Bank Nationally",
         "date": "2024-10-08T11:15:00",
-        "status": "completed",
+        "status": "Approved",
         "authorizedUsers": "",
         "icons": "🎁"
     },
@@ -60,8 +60,8 @@
         "amount": 33.00,
         "nameOfTransaction": "Coffee Shop",
         "description": "Monthly electricity bill",
-        "date": "2024-10-10T14:00:00",
-        "status": "pending",
+        "date": "2024-10-28T14:00:00",
+        "status": "Pending",
         "authorizedUsers": "",
         "icons": "💡"
     },
@@ -72,7 +72,7 @@
         "nameOfTransaction": "Payment",
         "description": "Cashback from credit card",
         "date": "2024-10-12T13:20:00",
-        "status": "completed",
+        "status": "Approved",
         "authorizedUsers": "",
         "icons": "💳"
     },
@@ -83,7 +83,7 @@
         "nameOfTransaction": "Coffee Shop",
         "description": "Coffee with friends",
         "date": "2024-10-14T16:45:00",
-        "status": "completed",
+        "status": "Approved",
         "authorizedUsers": "",
         "icons": "☕"
     },
@@ -94,7 +94,7 @@
         "nameOfTransaction": "Car Repair",
         "description": "Repair work for the car",
         "date": "2024-10-16T10:00:00",
-        "status": "pending",
+        "status": "Pending",
         "authorizedUsers": "",
         "icons": "🚗"
     },
@@ -105,7 +105,7 @@
         "nameOfTransaction": "Payment",
         "description": "Payment for freelance web development",
         "date": "2024-10-18T08:45:00",
-        "status": "completed",
+        "status": "Approved",
         "authorizedUsers": "",
         "icons": "📈"
     }

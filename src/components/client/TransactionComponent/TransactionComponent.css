@@ -40,9 +40,12 @@
 }
 
 .img-div svg {
-    width: 50%;
+    /*width: 50%;*/
 }
 
+.svg-inline--fa{
+    height: 50%;
+}
 /* ----- end class transaction-img ----- */
 
 /* !!! ----- class transaction-info ----- */

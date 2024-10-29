@@ -82,11 +82,11 @@
 }
 
 .check-mark > svg {
-    width: 40%;
+    width: auto;
+    height: 40%;
     border-radius: 50%;
     color: #f4f4f4;
     background-color: black;
-    border: none;
 }
 
 /* ---------------- end class no-payment-due ---------------- */
