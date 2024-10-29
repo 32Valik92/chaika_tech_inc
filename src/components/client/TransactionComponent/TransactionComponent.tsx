@@ -39,7 +39,8 @@ const TransactionComponent: FC<IProps> = ({transaction}) => {
 
   const showDetails = (id: number | string): void => {
     console.log(id);
-    router.push(`/transaction${id}`);
+    const transactionId = id.toString();
+    router.push(`/transaction/${transactionId}`);
   };
 
   return (
