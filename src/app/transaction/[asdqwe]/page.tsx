@@ -7,13 +7,13 @@ import {transactionService} from "@/services";
 
 type Props = {
   params: {
-    id: string;
+    asdqwe: string;
   }
 }
 
 const TransactionDetailPage = async (props: Props) => {
-  const {params: {id}} = props;
-  const transaction = await transactionService.getById(+id);
+  const {params: {asdqwe}} = props;
+  const transaction = await transactionService.getById(+asdqwe);
   console.log(transaction);
   return (
     <div className="transaction-detail-page">
