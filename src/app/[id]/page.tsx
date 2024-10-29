@@ -1,27 +1,29 @@
-import "./page.css";
+"use client";
+import { useSearchParams } from "next/navigation";
+import React, { FC } from "react";
 
-import React from "react";
+import { BackButtonComponent, TransactionDetailComponent } from "@/components";
+import { ITransactions } from "@/models";
 
-import {BackButtonComponent} from "@/components";
-import {transactionService} from "@/services";
+const TransactionDetailPage: FC = () => {
+  const searchParams = useSearchParams();
 
-type Props = {
-  params: {
-    id: string;
-  }
-}
+  const transaction = {
+    id: searchParams.get("id"),
+    type: searchParams.get("type"),
+    amount: searchParams.get("amount"),
+    nameOfTransaction: searchParams.get("nameOfTransaction"),
+    description: searchParams.get("description"),
+    date: searchParams.get("date"),
+    status: searchParams.get("status"),
+    authorizedUsers: searchParams.get("authorizedUsers"),
+  };
 
-const TransactionDetailPage = async (props: Props) => {
-  const {params: {id}} = props;
-  console.log(id);
-
-  const transaction = await transactionService.getAll();
-  console.log(transaction);
   return (
     <div className="transaction-detail-page">
-      <BackButtonComponent/>
-      {/*{transaction.map(value => <div key={value.id}>{value.id}</div>)}*/}
-      {/*<TransactionDetailComponent transaction={transaction}/>*/}
+      <BackButtonComponent />
+
+      <TransactionDetailComponent transaction={transaction as unknown as ITransactions} />
     </div>
   );
 };

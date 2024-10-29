@@ -37,9 +37,22 @@ const TransactionComponent: FC<IProps> = ({transaction}) => {
   };
 
   return (
-    <Link href={`/${transaction.id}`} className="link-component">
+    <Link href={{
+      pathname: `/${transaction.id}`,
+      query: {
+        id: transaction.id,
+        type: transaction.type,
+        amount: transaction.amount,
+        nameOfTransaction: transaction.nameOfTransaction,
+        description: transaction.description,
+        date: transaction.date,
+        status: transaction.status,
+        authorizedUsers: transaction.authorizedUsers,
+        icons: transaction.icons
+      }
+    }} className="link-component">
       <div className="transaction-component">
-        
+
         <div className="transaction-img">
           <div className="img-div" style={{backgroundColor: randomGray}}>
             <FontAwesomeIcon icon={faApple}/>

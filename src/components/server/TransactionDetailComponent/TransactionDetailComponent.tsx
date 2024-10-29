@@ -6,7 +6,7 @@ import {FC} from "react";
 import {ITransactions} from "@/models";
 
 interface IProps {
-  transaction: ITransactions | undefined;
+  transaction: ITransactions;
 }
 
 const TransactionDetailComponent: FC<IProps> = ({transaction}) => {
