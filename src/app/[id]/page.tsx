@@ -16,11 +16,11 @@ const TransactionDetailPage = async (props: Props) => {
   console.log(id);
 
   const transaction = await transactionService.getAll();
-  // console.log(transaction);
+  console.log(transaction);
   return (
     <div className="transaction-detail-page">
       <BackButtonComponent/>
-      {transaction.map(value => <div key={value.id}>{value.id}</div>)}
+      {/*{transaction.map(value => <div key={value.id}>{value.id}</div>)}*/}
       {/*<TransactionDetailComponent transaction={transaction}/>*/}
     </div>
   );
