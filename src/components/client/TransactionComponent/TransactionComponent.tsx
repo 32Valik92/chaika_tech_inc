@@ -37,7 +37,7 @@ const TransactionComponent: FC<IProps> = ({transaction}) => {
   };
 
   return (
-    <Link href={"id"} className="link-component">
+    <Link href={`/${transaction.id}`} className="link-component">
       <div className="transaction-component">
         
         <div className="transaction-img">

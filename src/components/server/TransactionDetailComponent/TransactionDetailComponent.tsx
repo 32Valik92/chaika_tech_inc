@@ -1,3 +1,4 @@
+"use client";
 import "./TransactionDetailComponent.css";
 
 import {FC} from "react";
@@ -9,8 +10,6 @@ interface IProps {
 }
 
 const TransactionDetailComponent: FC<IProps> = ({transaction}) => {
-
-  console.log(transaction);
   const formatDate = (dateString: string): string => {
     const date = new Date(dateString);
     const day = String(date.getDate()).padStart(2, "0");
