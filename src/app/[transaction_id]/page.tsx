@@ -7,13 +7,17 @@ import {transactionService} from "@/services";
 
 type Props = {
   params: {
-    asdqwe: string;
+    transaction_id: string;
   }
 }
 
 const TransactionDetailPage = async (props: Props) => {
-  const {params: {asdqwe}} = props;
-  const transaction = await transactionService.getById(+asdqwe);
+  const {params: {transaction_id}} = props;
+
+  // I did it, because free hosting doesn't take a confidence data like id
+  const transactionId = parseInt(transaction_id.replace("transaction_", ""), 10);
+
+  const transaction = await transactionService.getById(transactionId);
   console.log(transaction);
   return (
     <div className="transaction-detail-page">
