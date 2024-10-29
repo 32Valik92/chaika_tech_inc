@@ -1,10 +1,10 @@
 "use client";
 import "./BackButtonComponent.css";
-import React, {FC} from "react";
 
 import {faChevronLeft} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {useRouter} from "next/navigation";
+import React, {FC} from "react";
 
 const BackButtonComponent: FC = () => {
   const router = useRouter();

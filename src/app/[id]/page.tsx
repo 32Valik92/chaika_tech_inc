@@ -1,4 +1,5 @@
 import "./page.css";
+
 import React from "react";
 
 import {BackButtonComponent, TransactionDetailComponent} from "@/components";

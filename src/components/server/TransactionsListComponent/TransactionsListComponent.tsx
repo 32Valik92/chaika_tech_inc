@@ -2,8 +2,8 @@ import "./TransactionsListComponent.css";
 
 import React from "react";
 
-import {transactionService} from "@/services";
 import {TransactionComponent} from "@/components";
+import {transactionService} from "@/services";
 
 const TransactionsListComponent = async () => {
   const transactions = await transactionService.getAll();
