@@ -19,6 +19,7 @@ const TransactionComponent: FC<IProps> = ({transaction}) => {
   // random silver color
   const grayValue = Math.floor(Math.random() * 100) + 140;
   const randomGray = `rgb(${grayValue}, ${grayValue}, ${grayValue})`;
+  const {id: transactionID} = transaction;
 
   // check if a date is the last 7 days
   const formatDate = (dateString: string): string => {
@@ -37,15 +38,13 @@ const TransactionComponent: FC<IProps> = ({transaction}) => {
     }
   };
 
-  const showDetails = (id: number | string): void => {
-    console.log(id);
+  const showDetails = (): void => {
     // I did it, because free hosting doesn't take a confidence data like id
-
-    router.push("/transaction2");
+    router.push(`/${transactionID}`);
   };
 
   return (
-    <div className="transaction-component" onClick={() => showDetails("transaction2")}>
+    <div className="transaction-component" onClick={showDetails}>
       <div className="transaction-img">
         <div className="img-div" style={{backgroundColor: randomGray}}>
           <FontAwesomeIcon icon={faApple}/>
