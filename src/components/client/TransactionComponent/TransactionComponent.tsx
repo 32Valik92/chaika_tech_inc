@@ -4,7 +4,8 @@ import "./TransactionComponent.css";
 import {faApple} from "@fortawesome/free-brands-svg-icons";
 import {faChevronRight} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {useRouter} from "next/navigation";
+import Link from "next/link";
+// import {useRouter} from "next/navigation";
 import React, {FC} from "react";
 
 import {ITransactions} from "@/models";
@@ -14,7 +15,7 @@ interface IProps {
 }
 
 const TransactionComponent: FC<IProps> = ({transaction}) => {
-  const router = useRouter();
+  // const router = useRouter();
 
   // random silver color
   const grayValue = Math.floor(Math.random() * 100) + 140;
@@ -37,42 +38,46 @@ const TransactionComponent: FC<IProps> = ({transaction}) => {
     }
   };
 
-  const showDetails = (): void => {
-    router.push(`/${transaction.id}`);
-  };
+  // const showDetails = (): void => {
+  //   router.push(`/${transaction.id}`);
+  // };
 
   return (
-    <div className="transaction-component" onClick={showDetails}>
-      <div className="transaction-img">
-        <div className="img-div" style={{backgroundColor: randomGray}}>
-          <FontAwesomeIcon icon={faApple}/>
-        </div>
-      </div>
-
-      <div className="transaction-info">
-        <div className="info-name-amount">
-          <div className="info-name">{transaction.nameOfTransaction}</div>
-
-          <div className="info-amount">
-            {transaction.type === "payment" ? "+$" : "$"}{transaction.amount}
+    <Link href={`/${transaction.id}`} className="link-component">
+      <div className="transaction-component">
+        
+        <div className="transaction-img">
+          <div className="img-div" style={{backgroundColor: randomGray}}>
+            <FontAwesomeIcon icon={faApple}/>
           </div>
         </div>
 
-        <div className="info-status-description hidden-text">
-          {transaction.status === "Pending" ? "Pending - " : ""} {transaction.description}
+        <div className="transaction-info">
+          <div className="info-name-amount">
+            <div className="info-name">{transaction.nameOfTransaction}</div>
+
+            <div className="info-amount">
+              {transaction.type === "payment" ? "+$" : "$"}{transaction.amount}
+            </div>
+          </div>
+
+          <div className="info-status-description hidden-text">
+            {transaction.status === "Pending" ? "Pending - " : ""} {transaction.description}
+          </div>
+
+          <div className="info-authorizedUsers-date hidden-text">
+            {transaction.authorizedUsers !== "" ? `${transaction.authorizedUsers} - ` : ""}{formatDate(transaction.date)}
+          </div>
         </div>
 
-        <div className="info-authorizedUsers-date hidden-text">
-          {transaction.authorizedUsers !== "" ? `${transaction.authorizedUsers} - ` : ""}{formatDate(transaction.date)}
+        <div className="info-details">
+          <div className="details-icon">
+            <FontAwesomeIcon icon={faChevronRight}/>
+          </div>
         </div>
-      </div>
 
-      <div className="info-details">
-        <div className="details-icon">
-          <FontAwesomeIcon icon={faChevronRight}/>
-        </div>
       </div>
-    </div>
+    </Link>
   );
 };
 
