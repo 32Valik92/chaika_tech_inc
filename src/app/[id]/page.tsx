@@ -3,6 +3,7 @@ import "./page.css";
 import React from "react";
 
 import {BackButtonComponent} from "@/components";
+import {transactionService} from "@/services";
 
 type Props = {
   params: {
@@ -12,13 +13,14 @@ type Props = {
 
 const TransactionDetailPage = async (props: Props) => {
   const {params: {id}} = props;
+  console.log(id);
 
-  // const transaction = await transactionService.getById(+id);
+  const transaction = await transactionService.getAll();
   // console.log(transaction);
   return (
     <div className="transaction-detail-page">
       <BackButtonComponent/>
-      {id}
+      {transaction.map(value => <div key={value.id}>{value.id}</div>)}
       {/*<TransactionDetailComponent transaction={transaction}/>*/}
     </div>
   );
