@@ -1,4 +1,3 @@
-"use client";
 import "./TransactionDetailComponent.css";
 
 import {FC} from "react";
